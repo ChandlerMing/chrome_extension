@@ -1,4 +1,4 @@
-var date1 = new Date('2019-10-07')
+var date1 = new Date('2022-03-14')
 var date2 = new Date()
 
 var s1 = date1.getTime(),
@@ -17,10 +17,7 @@ const d = document.getElementById("d");
 d.innerHTML = getTrueNumber(day);
 
 
-
-
-
-var date1 = new Date('2019-09-20')
+var date1 = new Date('2022-04-18')
 var date2 = new Date()
 
 var s1 = date1.getTime(),
@@ -129,12 +126,6 @@ const getLunarDateString = (lunarDate) => {
   return data;
 };
 
-// const aaa = getLunarDate('2020-11-5')
-// console.log(aaa)  // {lunarYear: 2020, lunarMonth: 9, lunarDay: 20}
-
-// const bbb = getLunarDateString(aaa)
-// console.log(bbb)  // {tg: "庚", dz: "子", year: "鼠", month: "九", day: "廿"}
-
 // ① 当前时间
 var newDate = new Date()
 var year = newDate.getFullYear()
@@ -144,7 +135,7 @@ var today = year + '-' + month + '-' + date
 var lunarDate = getLunarDate(today)
 var newLunarDate = lunarDate.lunarYear + '-' + lunarDate.lunarMonth + '-' + lunarDate.lunarDay
 
-var brithday = new Date().getFullYear() + '-9-20'
+var brithday = new Date().getFullYear() + '-9-26'
 
 // 减法
 var subtraction = (new Date(newLunarDate).getTime() - new Date(brithday).getTime()) / 1000
@@ -241,43 +232,7 @@ function diffDate(date1, date2) {
   return y
 }
 
-var age = diffDate(newLunarDate, "1996-09-20")
+var age = diffDate(newLunarDate, "2000-09-26")
 
 const s = document.getElementById("s");
 s.innerHTML = getTrueNumber(age);
-
-
-// var date3 = new Date()
-// var tYear = date3.getFullYear();
-// console.log(tYear)
-
-// var tMonth = date3.getMonth();
-
-//   var m = tMonth + 1;
-//   // if (m.toString().length == 1) {
-//   //     m = "0" + m;
-//   // }
-// console.log(m)
-
-
-
-
-// const h = document.getElementById("h");
-// const m = document.getElementById("m");
-// const s = document.getElementById("s");
-
-// const countdown = setInterval(() => {
-//   const now   = new Date();
-//   const des   = comingdate.getTime() - now.getTime();
-//   const days  = Math.floor(des / (1000 * 60 * 60 * 24));
-//   const hours = Math.floor((des % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   const mins  = Math.floor((des % (1000 * 60 * 60)) / (1000 * 60));
-//   const secs  = Math.floor((des % (1000 * 60)) / 1000);
-
-// d.innerHTML = getTrueNumber(day);
-//   h.innerHTML = getTrueNumber(hours);
-//   m.innerHTML = getTrueNumber(mins);
-//   s.innerHTML = getTrueNumber(secs);
-
-//   if (x <= 0) clearInterval(x);
-// }, 1000);
